@@ -63,5 +63,8 @@ public class MyBinarySearchTree {
             inOrder(temp.getRight());
         }
     }
+    public int getCountRight(){
+        return countRight;
+    }
 
 }
