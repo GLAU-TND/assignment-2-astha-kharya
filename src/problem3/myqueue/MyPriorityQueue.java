@@ -15,4 +15,7 @@ public class MyPriorityQueue {
     {
         linkedList.addLast(stu);
     }
+    public void dequeue(){
+        linkedList.deleteFirst();
+    }
 }
