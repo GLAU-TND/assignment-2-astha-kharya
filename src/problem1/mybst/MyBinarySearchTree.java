@@ -66,5 +66,9 @@ public class MyBinarySearchTree {
     public int getCountRight(){
         return countRight;
     }
+    public void setCountRight(int countRight)
+    {
+        this.countRight=countRight;
+    }
 
 }
