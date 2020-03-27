@@ -43,5 +43,15 @@ public class MyBinarySearchTree {
     public void setRoot(TreeNode root){
         this.root=root;
     }
+    public void preOrder(TreeNode temp){
+        if(temp==null){
+            return;
+        }
+        else{
+            System.out.println(temp.getData());
+            preOrder(temp.getLeft());
+            preOrder(temp.getRight());
+        }
+    }
 
 }
