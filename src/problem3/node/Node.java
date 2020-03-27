@@ -6,22 +6,23 @@
  */
 package problem3.node;
 
-import problem5.student.Student;
+
+import problem3.Student.student;
 
 public class Node {
-    private Student data;
+    private student data;
     private Node next;
 
-    public Node(Student data) {
+    public Node(student data) {
         this.data = data;
         this.next = next;
     }
 
-    public Student getData() {
+    public student getData() {
         return data;
     }
 
-    public void setData(Student data) {
+    public void setData(student data) {
         this.data = data;
     }
 
