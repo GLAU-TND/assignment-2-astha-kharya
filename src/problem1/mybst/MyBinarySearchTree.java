@@ -12,6 +12,8 @@ import problem1.node.TreeNode;
 public class MyBinarySearchTree {
     private TreeNode root;
     private  int countRight;
+    public void insert(int data){
 
+    }
 
 }
