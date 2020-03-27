@@ -37,5 +37,8 @@ public class MyBinarySearchTree {
                }
          }
     }
+    public TreeNode getRoot(){
+        return root;
+    }
 
 }
