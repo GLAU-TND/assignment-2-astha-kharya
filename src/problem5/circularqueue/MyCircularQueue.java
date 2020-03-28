@@ -23,6 +23,8 @@ public class MyCircularQueue {
         return size==maxSize;
     }
 
+
+
     public MyCircularQueue(int maxSize){
         this.maxSize=maxSize;
         circularQueue=new Student[maxSize];
@@ -57,6 +59,15 @@ public class MyCircularQueue {
             System.out.println(circularQueue[(i + beginning) % maxSize]);
         }
     }
+    public void traverse(){
 
+    }
+    public int getSize() {
+        return size;
+    }
+
+    public void setSize(int size) {
+        this.size = size;
+    }
 
 }
