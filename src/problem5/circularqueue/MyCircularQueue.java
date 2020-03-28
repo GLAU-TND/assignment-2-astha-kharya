@@ -15,6 +15,10 @@ public class MyCircularQueue {
     private int top;
     private int maxSize;
     private Student[] circularQueue;
+    private boolean isEmpty(){
+        return size==0;
+    };
+
     private boolean isFull(){
         return size==maxSize;
     }
@@ -34,6 +38,18 @@ public class MyCircularQueue {
         }
         else{
             System.out.println("Queue is full.");
+        }
+    }
+    public Student dequeue(){
+        Student response= null;
+        if(!isEmpty()){
+            size--;
+            response=circularQueue[beginning];
+            beginning=(beginning+1)%maxSize;
+            return response;
+        }
+        else {
+            return response;
         }
     }
 
