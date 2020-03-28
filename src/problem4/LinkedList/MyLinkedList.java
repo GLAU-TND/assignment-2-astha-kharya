@@ -10,6 +10,7 @@ public class MyLinkedList {
             first=last=null;
             return;
         }
-        last.
+        last.setNext(node);
+        last=node;
     }
 }

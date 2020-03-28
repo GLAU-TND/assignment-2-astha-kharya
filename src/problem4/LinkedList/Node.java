@@ -2,7 +2,7 @@ package problem4.LinkedList;
 
 public class Node {
     private int data;
-    private int Next;
+    private Node Next;
 
     public Node(int data) {
         this.data = data;
@@ -17,11 +17,11 @@ public class Node {
         this.data = data;
     }
 
-    public int getNext() {
+    public Node getNext() {
         return Next;
     }
 
-    public void setNext(int next) {
-        Next = next;
+    public void setNext(Node Next){
+           this.Next=Next;
     }
 }
