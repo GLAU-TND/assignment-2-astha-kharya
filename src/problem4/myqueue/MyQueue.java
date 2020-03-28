@@ -23,5 +23,8 @@ public class MyQueue {
     public void dequeue(){
         myLinkedList.deleteFirst();
     }
+    public void show(){
+        myLinkedList.display();
+    }
 
 }
