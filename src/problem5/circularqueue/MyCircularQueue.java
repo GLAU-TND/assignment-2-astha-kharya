@@ -16,5 +16,12 @@ public class MyCircularQueue {
     private int maxSize;
     private Student[] circularQueue;
 
+    public MyCircularQueue(int maxSize){
+        this.maxSize=maxSize;
+        circularQueue=new Student[maxSize];
+        this.beginning=0;
+        this.top=0;
+        this.size=0;
+    }
 
 }
