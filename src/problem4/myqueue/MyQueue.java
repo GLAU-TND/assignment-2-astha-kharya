@@ -8,7 +8,7 @@ package problem4.myqueue;
 // to create queue to store pre - order successor
 
 import problem4.LinkedList.MyLinkedList;
-
+import problem4.LinkedList.Node;
 public class MyQueue {
     MyLinkedList myLinkedList=new MyLinkedList();
     public int peek(int data){
