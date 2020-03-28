@@ -36,5 +36,20 @@ public class MyBinarySearchTree {
         }
     }
 
+    public MyQueue getPreQueue() {
+        return preQueue;
     }
+
+    public void setPreQueue(MyQueue preQueue) {
+        this.preQueue = preQueue;
+    }
+
+    public MyQueue getPostQueue() {
+        return postQueue;
+    }
+
+    public void setPostQueue(MyQueue postQueue) {
+        this.postQueue = postQueue;
+    }
+}
 }
