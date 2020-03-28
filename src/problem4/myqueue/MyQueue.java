@@ -17,4 +17,11 @@ public class MyQueue {
         }
         return myLinkedList.search(data).getData();
     }
+    public void enqueue(int data){
+        myLinkedList.addLast(data);
+    }
+    public void dequeue(){
+        myLinkedList.deleteFirst();
+    }
+
 }
