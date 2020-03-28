@@ -40,4 +40,7 @@ public class Student {
     public void setAppearingCount(int appearingCount) {
         this.appearingCount = appearingCount;
     }
+    public String toString(){
+        return getName()+" "+getBacklog()+" "+getAppearingCount();
+    }
 }
