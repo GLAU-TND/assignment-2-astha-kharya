@@ -67,7 +67,30 @@ public class MyCircularQueue {
     }
 
     public void setSize(int size) {
-        this.size = size;
+        this.size=size;
     }
 
+    public int getBeginning() {
+        return beginning;
+    }
+
+    public void setBeginning(int beginning) {
+        this.beginning = beginning;
+    }
+
+    public int getTop() {
+        return top;
+    }
+
+    public void setTop(int top) {
+        this.top = top;
+    }
+
+    public Student[] getCircularQueue() {
+        return circularQueue;
+    }
+
+    public void setCircularQueue(Student[] circularQueue) {
+        this.circularQueue = circularQueue;
+    }
 }
