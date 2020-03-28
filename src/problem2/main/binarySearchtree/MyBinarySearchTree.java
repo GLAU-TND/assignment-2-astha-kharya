@@ -13,6 +13,7 @@ public class MyBinarySearchTree {
         this.preQueue = preQueue;
         this.postQueue = postQueue;
     }
+
     public void insert(int data) {
         TreeNode node = new TreeNode(data);
         if (root == null) {
@@ -51,5 +52,25 @@ public class MyBinarySearchTree {
     public void setPostQueue(MyQueue postQueue) {
         this.postQueue = postQueue;
     }
-}
-}
+    public void postOrder(TreeNode temp) {
+        if (temp == null) {
+            return;
+        } else {
+            postOrder(temp.getLeft());
+            postOrder(temp.getRight());
+            postQueue.enqueue(temp.getData());
+        }
+    }
+    public void inOrder(TreeNode temp) {
+                if (temp == null) {
+                    return;
+                }
+                else {
+                       inOrder(temp.getLeft());
+                       System.out.println(temp.getData());
+                        inOrder(temp.getRight());
+                }
+            }
+    }
+
+
