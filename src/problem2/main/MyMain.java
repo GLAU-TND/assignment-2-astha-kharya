@@ -21,6 +21,11 @@ public class MyMain {
         myBinarySearchTree.insert(15);
         myBinarySearchTree.insert(20);
         myBinarySearchTree.postOrder(myBinarySearchTree.getRoot());
-        myBinarySearchTree.preOrder
+        myBinarySearchTree.preOrder(myBinarySearchTree.getRoot());
+        System.out.println("PreOrder:");
+        preQueue.show();
+        System.out.println("PostOrder:");
+        postQueue.show();
+        System.out.println();
     }
 }
